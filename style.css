@@ -11,7 +11,7 @@
   }
   
   ::selection {
-    background-color: #ffa283;
+    background-color: #00FAEB;
   }
   
   ::-webkit-scrollbar {
@@ -20,7 +20,7 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #b4f0f9;
+    background-color: #00FAEB;
   }
   
   .navbar {
@@ -34,7 +34,7 @@
   }
   
   .inner-width {
-    max-width: 1300px;
+    max-width: 3000px;
     margin: auto;
     padding: 0 40px;
   }
@@ -46,24 +46,24 @@
   }
   
   .navbar-menu a {
-    color: rgb(246, 212, 224);
+    color: white;
     font-size: 15px;
     font-weight: 500;
-    margin-left: 30px;
+    margin-left: 95px;
     transition: 0.2s linear;
   }
   
   .sticky {
-    background-color: #ffa588;
+    background-color: #38393C;
     padding: 18px 0;
   }
   
   .navbar-menu a:hover {
-    color: #ffa588 !important;
+    color: #38393C !important;
   }
   
   .sticky .navbar-menu a {
-    color: #111;
+    color: white;
   }
   
   .menu-toggler {
@@ -107,6 +107,7 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
   
   .heroComp {
@@ -116,6 +117,8 @@
     text-align: left;
     margin-top: 150px;
     flex-direction: column;
+    margin-left: 80px;
+    margin-top: 180px;
   }
   
   .head-title {
@@ -127,8 +130,8 @@
   
   .head-subtitle {
     font-family: "Poppins", sans-serif;
-    font-size: 88px;
-    color: #ffa588;
+    font-size: 75px;
+    color: #F4F900;
     line-height: 132px;
     font-weight: 600;
   }
@@ -141,9 +144,17 @@
   }
   
   .hackerImage {
+    margin-top: 100px;
     float: right;
     width: 40%;
     height: 40%;
+  }
+
+  .recommend-img {
+    float: left;
+    height: 260px;
+    margin-top: 120px;
+    padding-left: 150px;
   }
   
   #home .buttons {
@@ -152,21 +163,51 @@
   }
   
   #home .buttons a {
-    color: #ffa588;
+    color: #F4F900;
     display: inline-block;
     font-size: 15px;
-    font-weight: 500;
-    margin: 15px 30px;
+    font-weight: 600;
+    margin: 15px 20px;
     width: 180px;
-    border: 1px solid #ffa588;
+    border: 2px solid #F4F900;
     padding: 14px 0;
     border-radius: 10px;
     transition: 0.2s linear;
   }
   
+  #info .buttons a {
+    color: #F4F900;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px 30px;
+    width: 180px;
+    border: 2px solid #F4F900;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: 0.2s linear;
+    text-align: center;
+  }
+
+  #info .buttons {
+    margin-top: 60px;
+    margin-left: 920px;
+  }
+
+  #info .buttons a:hover,
+  #info .buttons a:nth-child(1) {
+    background-color: #F4F900;
+    color: black;
+  }
+
   #home .buttons a:hover,
   #home .buttons a:nth-child(1) {
-    background-color: #ffa588;
+    background-color: #F4F900;
+    color: black;
+  }
+  #home .buttons b:nth-child(1) {
+    width: 300px;
+    background-color: #F4F900;
     color: black;
   }
   
@@ -178,7 +219,7 @@
   .section-title {
     font-size: 56px;
     font-weight: 600;
-    color: #ffa588;
+    color: #F4F900;
     /* margin-top: 50px; */
   }
   
@@ -194,8 +235,10 @@
   
   .about-text {
     color: white;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: justify;
+    margin-right: 150px;
+    padding-left: 100px;
   }
   
   .about-pic {
@@ -207,9 +250,8 @@
     display: flex;
   }
   .sm {
-    margin-top: 10px;
-  
-    padding-right: 20px;
+    margin-top: 20px;
+    padding-right: 30px;
     height: 20px;
     transition: 0.2s linear;
   }
@@ -232,20 +274,63 @@
     height: 2px;
     margin-top: 80px;
     margin-bottom: 80px;
-    background-color: #ffa588;
+    background-color: #c90fa1;
     border-radius: 3px;
     left: calc(50% - 150px);
   }
+
+  .section-title-1 {
+    margin-left: 220px;
+    font-weight: bold;
+    color: #fff;
+  }
   
+  .section-title-2 {
+    font-weight: bold;
+    margin-right: 50px;
+    padding-left: 60px;
+    color: #fff;
+  }
+
+  .section-title-3 {
+    margin-right: 165px;
+    font-weight: bold;
+    padding-left: 30px;
+    color: #fff;
+  }
+
+  .recommend-text {
+    color: #fff;
+    margin-left: 500px;
+    margin-right: 100px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+  }
+
+  .recommend-name2 {
+    color: #00F0FF;
+    margin-right: 250px;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+
+  .recommend-name1 {
+    color: #00F0FF;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+
   .service {
     width: calc(30% - 10px);
     text-align: center;
     height: 300px;
-    border: 2px solid #e788ff;
+    border: 2px solid #00FAEB;
     border-radius: 9px;
     margin: 20px 0;
-    padding: 40px 20px;
-    color: #f4ecec;
+    padding: 70px 50px;
+    color: #fff;
     transition: 0.3s linear;
   }
   
@@ -253,10 +338,10 @@
     width: calc(40% - 50px);
     height: 350px;
     text-align: center;
-    border: 2px solid #deb4ca;
+    border: 2px solid #00FAEB;
     border-radius: 9px;
-    padding: 40px 20px;
-    color: #e0efe4;
+    padding: 80px 50px;
+    color: #fff;
     transition: 0.3s linear;
   }
   
@@ -272,13 +357,13 @@
     margin-bottom: 40px;
   }
   .service h4 {
-    color: #ffa588;
+    color: #00FAEB;
     font-weight: 600;
     size: 32px;
   }
   
   .serviceMid h4 {
-    color: #ffa588;
+    color: #00FAEB;
     font-weight: 600;
     size: 32px;
   }
@@ -304,7 +389,7 @@
     height: 50px;
     margin: 10px 0;
     background: none;
-    border: 1px solid #ffa588;
+    border: 1px solid #00FAEB;
     outline: none;
     padding: 20px;
     border-radius: 5px;
@@ -320,12 +405,12 @@
   
   .contact-form .btn {
     width: 300px;
-    border: 2px solid #ffa588;
+    border: 2px solid #00FAEB;
     padding: 5px;
     margin-top: 20px;
     margin-left: auto;
     cursor: pointer;
-    background-color: #ffa588;
+    background-color: #00FAEB;
     border-radius: 8px;
     color: #202124;
     font-size: 20px;
@@ -338,9 +423,9 @@
     position: absolute;
     height: 250px;
     margin-top: 20px;
-    background-color: #ffa588;
+    background-color: #00FAEB;
     border-radius: 3px;
-    left: calc(67% - 200px);
+    left: calc(67% - 260px);
   }
   
   .contact-info .item {
@@ -355,7 +440,7 @@
   
   .contact-head {
     padding-bottom: 10px;
-    color: #ffa588;
+    color: #00FAEB;
   }
   
   .contact-icon img {
@@ -364,12 +449,12 @@
   }
   
   footer {
-    background: #292b2e;
+    background-color: #3b3b3b;
     color: #fff;
     padding: 30px 0;
     text-align: center;
   }
-  
+
   .copyright {
     font-size: 15px;
     margin-bottom: 20px;
@@ -380,7 +465,25 @@
     color: #48dbfb;
     font-weight: 500;
   }
+
+  .info-text {
+    color: #a4d8f0;
+    margin-left: 730px; 
+    padding-top: 60px;
+    padding-left: 50px;
+    margin-right: 120px;
+    align-items: center;  
+  }
+
+  .info-img {
+    float: left;
+    margin-top: 150px;
+    padding-left: 130px;
+    height: 350px;
+  }
+
   
+
   .goTop {
     position: fixed;
     z-index: 999;
@@ -388,8 +491,8 @@
     right: 40px;
     width: 40px;
     height: 50px;
-    background-color: #ffa588;
-    color: #fff;
+    background-color: #000000;
+    color: #f3e2f0;
     border: none;
     border-radius: 200px;
     cursor: pointer;
@@ -406,7 +509,7 @@
       position: fixed;
       height: 100vh;
       widows: 100%;
-      background-color: #353b48;
+      background-color: #6b768f;
       top: 0;
       right: -100%;
       max-width: 400px;
@@ -421,7 +524,7 @@
     }
   
     .sticky .navbar-menu {
-      background-color: #ffa588;
+      background-color: #a469f6;
     }
   
     .navbar-menu.active {
@@ -472,7 +575,7 @@
       text-align: justify;
     }
   
-    .services {
+      .services {
       width: 100%;
     }
   
